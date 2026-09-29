@@ -59,7 +59,7 @@ inline std::ostream& operator<<(std::ostream& out, const Vector3& v)
 
 inline Vector3 operator+(const Vector3& u, const Vector3& v)
 {
-	return Vector3(u.E[0] + v.E[0], u.E[0] + v.E[1], u.E[2] + v.E[2]);
+	return Vector3(u.E[0] + v.E[0], u.E[1] + v.E[1], u.E[2] + v.E[2]);
 }
 inline Vector3 operator-(const Vector3& u, const Vector3& v)
 {

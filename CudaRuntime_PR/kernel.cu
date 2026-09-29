@@ -4,9 +4,20 @@
 #include "Ray.h"
 
 using namespace std;
-
+bool HitSphere(const Point3& center, double radius, const Ray& r)
+{
+	Vec3 oc = center - r.Origin();
+	auto a = Dot(r.Direction(), r.Direction());
+	auto b = -2.0 * Dot(r.Direction(), oc);
+	auto c = Dot(oc, oc) - radius * radius;
+	auto discriminant = b * b - 4 * a * c;
+	return (discriminant >= 0);
+}
 Color RayColor(const Ray& r)
 {
+	if (HitSphere(Point3(0, 0, -1), 0.5, r))
+		return Color(1, 0, 0);
+
 	Vec3 unitDirection = UnitVector(r.Direction());
 	auto a = 0.5 * (unitDirection.Y() + 1.0);
 
@@ -20,7 +31,7 @@ int main()
 
 	// 이미지 높이를 계산 최소 1이 되도록
 	int imageHeight = int(imageWidth / aspectRatio);
-	imageHeight = (imageHeight < 0) ? 1 : imageHeight;
+	imageHeight = (imageHeight < 1) ? 1 : imageHeight;
 
 	// 카메라
 	auto focalLength = 1.0;
@@ -37,8 +48,7 @@ int main()
 	auto pixelDeltaV = viewportV / imageHeight;
 
 	// 왼쪽 위 픽셀의 위치를 계산
-	auto viewportUpperLeft = cameraCenter
-		- Vec3(0, 0, focalLength) - viewportU / 2 - viewportV / 2;
+	auto viewportUpperLeft = cameraCenter - Vec3(0, 0, focalLength) - viewportU / 2 - viewportV / 2;
 	auto pixel100Loc = viewportUpperLeft + 0.5 * (pixelDeltaU + pixelDeltaV);
 
 	// Render
@@ -60,3 +70,4 @@ int main()
 
 	clog << "\rDone.                   \n";
 }
+
