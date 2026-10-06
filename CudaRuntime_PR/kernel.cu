@@ -1,24 +1,38 @@
-﻿#include <iostream>
+﻿#include "RTWeekend.h"
+
+#include "Hittable.h"
+#include "HittableList.h"
+#include "Sphere.h"
+
 #include "Color.h"
 #include "Vec3.h"
 #include "Ray.h"
 
+#include <iostream>
 using namespace std;
-bool HitSphere(const Point3& center, double radius, const Ray& r)
+double HitSphere(const Point3& center, double radius, const Ray& r)
 {
 	Vec3 oc = center - r.Origin();
-	auto a = Dot(r.Direction(), r.Direction());
-	auto b = -2.0 * Dot(r.Direction(), oc);
-	auto c = Dot(oc, oc) - radius * radius;
-	auto discriminant = b * b - 4 * a * c;
-	return (discriminant >= 0);
-}
-Color RayColor(const Ray& r)
-{
-	if (HitSphere(Point3(0, 0, -1), 0.5, r))
-		return Color(1, 0, 0);
+	auto a = r.Direction().LengthSquared();
+	auto h = Dot(r.Direction(), oc);
+	auto c = oc.LengthSquared() - radius * radius;
+	auto discriminant = h * h - a * c;
+	if (discriminant < 0.0)
+	{
+		return -1.0f;
+	}
 
-	Vec3 unitDirection = UnitVector(r.Direction());
+	return (h - std::sqrt(discriminant)) /  a;
+}
+Color RayColor(const Ray& ray, const Hittable& world)
+{
+	HitRecord hitRecord;
+	if(world.Hit(ray, Interval(0.0,Infinity), hitRecord))
+	{
+		return 0.5 * (hitRecord.Normal + Color(1.0, 1.0, 1.0));
+	}
+
+	Vec3 unitDirection = UnitVector(ray.Direction());
 	auto a = 0.5 * (unitDirection.Y() + 1.0);
 
 	return (1.0 - a) * Color(1.0, 1.0, 1.0) + a * Color(0.5, 0.7, 1.0);
@@ -32,7 +46,11 @@ int main()
 	// 이미지 높이를 계산 최소 1이 되도록
 	int imageHeight = int(imageWidth / aspectRatio);
 	imageHeight = (imageHeight < 1) ? 1 : imageHeight;
-
+	
+	// 월드
+	HittableList world;
+	world.Add(std::make_shared<Sphere>(Point3(0.0, 0.0, -1.0), 0.5));
+	world.Add(std::make_shared<Sphere>(Point3(0.0, -100.5, -1.0), 100.0));
 	// 카메라
 	auto focalLength = 1.0;
 	auto viewportHeight = 2.0;
@@ -49,7 +67,7 @@ int main()
 
 	// 왼쪽 위 픽셀의 위치를 계산
 	auto viewportUpperLeft = cameraCenter - Vec3(0, 0, focalLength) - viewportU / 2 - viewportV / 2;
-	auto pixel100Loc = viewportUpperLeft + 0.5 * (pixelDeltaU + pixelDeltaV);
+	auto pixel00Loc = viewportUpperLeft + 0.5 * (pixelDeltaU + pixelDeltaV);
 
 	// Render
 	cout << "P3\n" << imageWidth << " " << imageHeight << "\n255\n";
@@ -59,11 +77,11 @@ int main()
 		clog << "\rScanlines remaining: " << (imageHeight - y) << ' ' << flush;
 		for (int x = 0; x < imageWidth; x++)
 		{
-			auto pixelCenter = pixel100Loc + (x * pixelDeltaU) + (y * pixelDeltaV);
+			auto pixelCenter = pixel00Loc + (x * pixelDeltaU) + (y * pixelDeltaV);
 			auto rayDirection = pixelCenter - cameraCenter;
-			Ray r(cameraCenter, rayDirection);
+			Ray ray(cameraCenter, rayDirection);
 			
-			Color pixelColor = RayColor(r);
+			Color pixelColor = RayColor(ray,world);
 			WriteColor(cout, pixelColor);
 		}
 	}

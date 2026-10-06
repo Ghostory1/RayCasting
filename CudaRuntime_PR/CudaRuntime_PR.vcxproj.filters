@@ -13,6 +13,21 @@
     <ClInclude Include="Ray.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="Hittable.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="HittableList.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTWeekend.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interval.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header files">

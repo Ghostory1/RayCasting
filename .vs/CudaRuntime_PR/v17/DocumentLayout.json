@@ -7,16 +7,36 @@
       "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Sphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Sphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\HittableList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\HittableList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Hittable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Hittable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Ray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Ray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\rtweekend.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\rtweekend.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Interval.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Interval.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9927A96-2149-21EB-3377-7968A0EC2552}|CudaRuntime_PR\\CudaRuntime_PR.vcxproj|solutionrelative:CudaRuntime_PR\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +46,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Interval.h",
+              "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Interval.h",
+              "RelativeDocumentMoniker": "CudaRuntime_PR\\Interval.h",
+              "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Interval.h",
+              "RelativeToolTip": "CudaRuntime_PR\\Interval.h",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-06T09:38:31.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RTWeekend.h",
+              "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\RTWeekend.h",
+              "RelativeDocumentMoniker": "CudaRuntime_PR\\RTWeekend.h",
+              "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\RTWeekend.h",
+              "RelativeToolTip": "CudaRuntime_PR\\RTWeekend.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-06T09:30:10.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HittableList.h",
+              "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\HittableList.h",
+              "RelativeDocumentMoniker": "CudaRuntime_PR\\HittableList.h",
+              "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\HittableList.h",
+              "RelativeToolTip": "CudaRuntime_PR\\HittableList.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-06T09:19:56.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sphere.h",
+              "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Sphere.h",
+              "RelativeDocumentMoniker": "CudaRuntime_PR\\Sphere.h",
+              "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Sphere.h",
+              "RelativeToolTip": "CudaRuntime_PR\\Sphere.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-06T08:35:49.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Hittable.h",
+              "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Hittable.h",
+              "RelativeDocumentMoniker": "CudaRuntime_PR\\Hittable.h",
+              "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Hittable.h",
+              "RelativeToolTip": "CudaRuntime_PR\\Hittable.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-06T08:32:02.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ray.h",
               "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Ray.h",
               "RelativeDocumentMoniker": "CudaRuntime_PR\\Ray.h",
               "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Ray.h",
               "RelativeToolTip": "CudaRuntime_PR\\Ray.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-29T07:11:53.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Color.h",
               "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Color.h",
               "RelativeDocumentMoniker": "CudaRuntime_PR\\Color.h",
@@ -51,18 +136,17 @@
               "RelativeToolTip": "CudaRuntime_PR\\Color.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-28T15:13:14.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T15:13:14.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Vec3.h",
               "DocumentMoniker": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Vec3.h",
               "RelativeDocumentMoniker": "CudaRuntime_PR\\Vec3.h",
               "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\Vec3.h",
               "RelativeToolTip": "CudaRuntime_PR\\Vec3.h",
-              "ViewState": "AgIAADcAAAAAAAAAAAAuwD8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAD8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-28T14:09:37.38Z",
               "EditorCaption": ""
@@ -75,7 +159,7 @@
               "RelativeDocumentMoniker": "CudaRuntime_PR\\kernel.cu",
               "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\kernel.cu",
               "RelativeToolTip": "CudaRuntime_PR\\kernel.cu",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-09-19T17:24:58.692Z",
               "EditorCaption": ""

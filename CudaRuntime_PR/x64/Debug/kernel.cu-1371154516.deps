@@ -89,6 +89,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.3313
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vcruntime_new_debug.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vcruntime_string.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vcruntime_typeinfo.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\wmmintrin.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xatomic.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xcall_once.h
@@ -109,6 +110,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.3313
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\yvals.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\yvals_core.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\zmmintrin.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\__msvc_bit_utils.hpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\__msvc_iter_core.hpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\__msvc_sanitizer_annotate_container.hpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\__msvc_system_error_abi.hpp
@@ -155,5 +157,9 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\vector_function
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\vector_functions.hpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\vector_types.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Color.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Hittable.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\HittableList.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Ray.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\RTWeekend.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Sphere.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Vec3.h
