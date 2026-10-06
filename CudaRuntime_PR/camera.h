@@ -8,6 +8,7 @@ class Camera
 public:
 	double aspectRatio = 1.0;
 	int imageWidth = 100;
+	int samplesPerPixel = 10;
 
 	void Render(const Hittable& world)
 	{
@@ -24,16 +25,15 @@ public:
 
 			for (int pixelIndex = 0; pixelIndex < imageWidth; pixelIndex++)
 			{
-				auto pixelCenter =
-					mPixel00Location
-					+ (pixelIndex * mPixelDeltaU)
-					+ (scanlineIndex * mPixelDeltaV);
+				Color pixelColor(0.0, 0.0, 0.0);
 
-				auto rayDirection = pixelCenter - mCenter;
-				Ray ray(mCenter, rayDirection);
+				for (int sampleIndex = 0; sampleIndex < samplesPerPixel; sampleIndex++)
+				{
+					Ray ray = GetRay(pixelIndex, scanlineIndex);
+					pixelColor += RayColor(ray, world);
+				}
 
-				Color pixelColor = RayColor(ray, world);
-				WriteColor(std::cout, pixelColor);
+				WriteColor(std::cout, mPixelSamplesScale * pixelColor);
 			}
 		}
 		std::clog << "\rDone.                  \n";
@@ -45,6 +45,7 @@ private:
 		mImageHeight = static_cast<int>(imageWidth / aspectRatio);
 		mImageHeight = (mImageHeight < 1) ? 1 : mImageHeight;
 
+		mPixelSamplesScale = 1.0 / static_cast<double>(samplesPerPixel);
 		mCenter = Point3(0.0, 0.0, 0.0);
 
 		// ºäÆ÷Æ®
@@ -66,7 +67,23 @@ private:
 
 		mPixel00Location = viewportUpperLeft + 0.5 * (mPixelDeltaU + mPixelDeltaV);
 	}
+	Ray GetRay(int pixelIndex, int scanlineIndex) const
+	{
+		auto offset = SampleSquare();
+		auto pixelSample =
+			mPixel00Location
+			+ ((pixelIndex + offset.X()) * mPixelDeltaU)
+			+ ((scanlineIndex + offset.Y()) * mPixelDeltaV);
 
+		auto rayOrigin = mCenter;
+		auto rayDirection = pixelSample - rayOrigin;
+
+		return Ray(rayOrigin, rayDirection);
+	}
+	Vec3 SampleSquare() const
+	{
+		return Vec3(RandomDouble() - 0.5, RandomDouble() - 0.5, 0.0);
+	}
 	Color RayColor(const Ray& ray, const Hittable& world) const
 	{
 		HitRecord hitRecord;
@@ -84,7 +101,10 @@ private:
 
 
 private:
+
 	int mImageHeight = 0;
+	double mPixelSamplesScale = 1.0;
+
 	Point3 mCenter;
 	Point3 mPixel00Location;
 	Vec3 mPixelDeltaU;

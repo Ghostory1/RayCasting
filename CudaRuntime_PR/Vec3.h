@@ -22,6 +22,7 @@ struct Vector3
 		E[0] += v.E[0];
 		E[1] += v.E[1];
 		E[2] += v.E[2];
+		return *this;
 	}
 
 	Vector3& operator*=(double t)

@@ -72,3 +72,4 @@ CUDA 프로젝트를 생성하면 기본적으로 `kernel.cu` 파일이 생성�
 - [04. Adding a Sphere](https://ivy-face-1df.notion.site/04-Adding-a-Sphere-3eaf2a3a5fb5805e931dd6886ecf57c3?pvs=143)
 - [05. 표면 법선과 다중 객체](https://ivy-face-1df.notion.site/05-3f1f2a3a5fb5805eaa6add78fc14be1f?pvs=143)
 - [06. 카메라 클래스](https://ivy-face-1df.notion.site/06-3f1f2a3a5fb58043814fccc389cc3ece?pvs=143)
+- [07. 안티앨리어싱](https://ivy-face-1df.notion.site/07-3f1f2a3a5fb580b58e34c87457143b5d?pvs=143)
