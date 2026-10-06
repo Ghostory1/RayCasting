@@ -66,8 +66,9 @@ CUDA 프로젝트를 생성하면 기본적으로 `kernel.cu` 파일이 생성�
 ### Project Documentation
 
 프로젝트의 자세한 설명 및 구현 과정은 아래 Notion 문서에서 확인할 수 있습니다.
-[01. 이미지 출력](https://ivy-face-1df.notion.site/01-3e9f2a3a5fb580f9bc3ff6eae6546f1b?pvs=143)
-[02. The Vec3 Class](https://ivy-face-1df.notion.site/02-The-Vec3-Class-3e9f2a3a5fb5800e9d4ef0578f092632?pvs=143)
-[03. Rays: A Simple Camera and Background](https://ivy-face-1df.notion.site/03-Rays-a-Simple-Camera-and-Background-3eaf2a3a5fb58000a639fb49a6a5a451?pvs=143)
-[04. Adding a Sphere](https://ivy-face-1df.notion.site/04-Adding-a-Sphere-3eaf2a3a5fb5805e931dd6886ecf57c3?pvs=143)
-[05. 표면 법선과 다중 객체](https://ivy-face-1df.notion.site/05-3f1f2a3a5fb5805eaa6add78fc14be1f?pvs=143)
+- [01. 이미지 출력](https://ivy-face-1df.notion.site/01-3e9f2a3a5fb580f9bc3ff6eae6546f1b?pvs=143)
+- [02. The Vec3 Class](https://ivy-face-1df.notion.site/02-The-Vec3-Class-3e9f2a3a5fb5800e9d4ef0578f092632?pvs=143)
+- [03. Rays: A Simple Camera and Background](https://ivy-face-1df.notion.site/03-Rays-a-Simple-Camera-and-Background-3eaf2a3a5fb58000a639fb49a6a5a451?pvs=143)
+- [04. Adding a Sphere](https://ivy-face-1df.notion.site/04-Adding-a-Sphere-3eaf2a3a5fb5805e931dd6886ecf57c3?pvs=143)
+- [05. 표면 법선과 다중 객체](https://ivy-face-1df.notion.site/05-3f1f2a3a5fb5805eaa6add78fc14be1f?pvs=143)
+- [06. 카메라 클래스](https://ivy-face-1df.notion.site/06-3f1f2a3a5fb58043814fccc389cc3ece?pvs=143)
