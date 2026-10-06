@@ -97,12 +97,6 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_ap
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(13672): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(14223): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(14848): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
-C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Vec3.h(25): warning #940-D: missing return statement at end of non-void function "Vector3::operator+="
-    	}
-    	^
-  
-  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
-  
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(1277): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(2991): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(1277): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
@@ -231,12 +225,6 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_ap
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(13672): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(14223): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\cuda_runtime_api.h(14848): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
-C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Vec3.h(25): warning #940-D: missing return statement at end of non-void function "Vector3::operator+="
-    	}
-    	^
-  
-  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
-  
   kernel.cu
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(1277): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(2991): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
@@ -244,4 +232,5 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(2991): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(1277): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\driver_types.h(2991): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  LINK : C:\Users\ume65\source\repos\CudaRuntime_PR\x64\Debug\CudaRuntime_PR.exe not found or not built by the last incremental link; performing full link
   CudaRuntime_PR.vcxproj -> C:\Users\ume65\source\repos\CudaRuntime_PR\x64\Debug\CudaRuntime_PR.exe
