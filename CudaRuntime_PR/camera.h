@@ -9,6 +9,7 @@ public:
 	double aspectRatio = 1.0;
 	int imageWidth = 100;
 	int samplesPerPixel = 10;
+	int maxDepth = 10;
 
 	void Render(const Hittable& world)
 	{
@@ -30,7 +31,7 @@ public:
 				for (int sampleIndex = 0; sampleIndex < samplesPerPixel; sampleIndex++)
 				{
 					Ray ray = GetRay(pixelIndex, scanlineIndex);
-					pixelColor += RayColor(ray, world);
+					pixelColor += RayColor(ray,maxDepth ,world);
 				}
 
 				WriteColor(std::cout, mPixelSamplesScale * pixelColor);
@@ -84,13 +85,18 @@ private:
 	{
 		return Vec3(RandomDouble() - 0.5, RandomDouble() - 0.5, 0.0);
 	}
-	Color RayColor(const Ray& ray, const Hittable& world) const
+	Color RayColor(const Ray& ray,int depth ,const Hittable& world) const
 	{
+		if (depth <= 0)
+		{
+			return Color(0.0, 0.0, 0.0);
+		}
 		HitRecord hitRecord;
 
-		if (world.Hit(ray, Interval(0.0, Infinity), hitRecord))
+		if (world.Hit(ray, Interval(0.001, Infinity), hitRecord))
 		{
-			return 0.5 * (hitRecord.Normal + Color(1.0, 1.0, 1.0));
+			Vec3 direction = hitRecord.Normal + RandomUnitVector();
+			return 0.5 * RayColor(Ray(hitRecord.P,direction),depth-1,world);
 		}
 
 		Vec3 unitDirection = UnitVector(ray.Direction());
