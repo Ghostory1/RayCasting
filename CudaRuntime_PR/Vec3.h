@@ -4,8 +4,9 @@
 #include <cmath>
 #include <iostream>
 
-struct Vector3
+class Vector3
 {
+public:
 	Vector3() : E{0,0,0}{}
 	Vector3(double e0,double e1, double e2) : E{e0,e1,e2} {}
 
@@ -44,7 +45,14 @@ struct Vector3
 	{
 		return E[0] * E[0] + E[1] * E[1] + E[2] * E[2];
 	}
+	bool NearZero() const
+	{
+		auto threshold = 1e-8;
 
+		return (std::fabs(E[0]) < threshold)
+			&& (std::fabs(E[1]) < threshold)
+			&& (std::fabs(E[2]) < threshold);
+	}
 	static Vector3 Random()
 	{
 		return Vector3(RandomDouble(), RandomDouble(), RandomDouble());
@@ -61,7 +69,7 @@ struct Vector3
 	double E[3];
 
 private:
-	double mElements[3] = {};
+	//double mElements[3] = {};
 };
 typedef Vector3 Vec3;
 
@@ -142,5 +150,8 @@ inline Vector3 RandomOnHemisphere(const Vector3& normal)
 	}
 	return -unitSphereDirection;
 }
-
+inline Vec3 Reflect(const Vec3& v, const Vec3& n)
+{
+	return v - 2.0 * Dot(v, n) * n;
+}
 #endif

@@ -165,6 +165,9 @@ C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Color.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Hittable.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\HittableList.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Interval.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Lambertian.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Material.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Metal.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Ray.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\RTWeekend.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Sphere.h

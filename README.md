@@ -74,3 +74,4 @@ CUDA 프로젝트를 생성하면 기본적으로 `kernel.cu` 파일이 생성�
 - [06. 카메라 클래스](https://ivy-face-1df.notion.site/06-3f1f2a3a5fb58043814fccc389cc3ece?pvs=143)
 - [07. 안티앨리어싱](https://ivy-face-1df.notion.site/07-3f1f2a3a5fb580b58e34c87457143b5d?pvs=143)
 - [08. 확산 재질](https://ivy-face-1df.notion.site/08-3f2f2a3a5fb5808d8ed9cb39e5bf5bfc?pvs=143)
+- [09. 메탈](https://ivy-face-1df.notion.site/09-Metal-3f3f2a3a5fb580fe80cbc5f6e65137ad?pvs=143)
