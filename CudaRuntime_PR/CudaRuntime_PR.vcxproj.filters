@@ -40,6 +40,9 @@
     <ClInclude Include="Lambertian.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="Dielectric.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header files">

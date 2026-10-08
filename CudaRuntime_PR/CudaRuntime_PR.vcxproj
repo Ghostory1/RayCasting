@@ -82,6 +82,7 @@
   <ItemGroup>
     <ClInclude Include="camera.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="Dielectric.h" />
     <ClInclude Include="Hittable.h" />
     <ClInclude Include="HittableList.h" />
     <ClInclude Include="Interval.h" />

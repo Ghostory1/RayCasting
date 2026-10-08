@@ -162,6 +162,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\vector_function
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.4\include\vector_types.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\camera.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Color.h
+C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Dielectric.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Hittable.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\HittableList.h
 C:\Users\ume65\source\repos\CudaRuntime_PR\CudaRuntime_PR\Interval.h

@@ -18,6 +18,7 @@ public:
 	{	
 		// 히트 레코드 법선 벡터를 설정
 		// 참고: 매개변수 outwardNormal은 단위 벡터를 가진다고 가정
+		
 		bFrontFace = Dot(ray.Direction(), outwardNormal) < 0.0;
 		Normal = bFrontFace ? outwardNormal : -outwardNormal;
 	}
