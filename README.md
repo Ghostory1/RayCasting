@@ -2,7 +2,7 @@
 - [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html#positionablecamera/cameraviewinggeometry)
 
 ### A Final Render
-![Main Banner](x64/Debug/image13-A-Final-Render.ppm)
+![Main Banner](x64/Debug/MainBanner.png)
 
 ### Project Documentation
 
