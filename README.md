@@ -1,6 +1,9 @@
 ### 참고 문헌
 - [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html#positionablecamera/cameraviewinggeometry)
 
+### A Final Render
+![Main Banner](x64/Debug/image13-A-Final-Render.ppm)
+
 ### Project Documentation
 
 프로젝트의 자세한 설명 및 구현 과정은 아래 Notion 문서에서 확인할 수 있습니다.
@@ -16,6 +19,7 @@
 - [10. 유전체](https://ivy-face-1df.notion.site/10-Dielectrics-3f3f2a3a5fb58008b721f6a0983d389c?pvs=143)
 - [11. 카메라 위치 조정](https://ivy-face-1df.notion.site/11-3f4f2a3a5fb580c48fbce527f2cd0847?pvs=143)
 - [12. 초점 흐림](https://ivy-face-1df.notion.site/12-Defocus-Blur-3f4f2a3a5fb5805ab588df572877fe18?pvs=143)
+- [13. A Final Render](https://ivy-face-1df.notion.site/13-A-Final-Render-3f4f2a3a5fb580f79a9afee6796972d2?pvs=143)
 
 ### CUDA 개발 환경 설정
 

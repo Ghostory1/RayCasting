@@ -118,8 +118,7 @@
               "RelativeToolTip": "CudaRuntime_PR\\camera.h",
               "ViewState": "AgIAAGgAAAAAAAAAAAAYwHQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-08T12:01:26.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T12:01:26.648Z"
             },
             {
               "$type": "Document",
@@ -131,8 +130,7 @@
               "RelativeToolTip": "CudaRuntime_PR\\Vec3.h",
               "ViewState": "AgIAAJwAAAAAAAAAAAAowK8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-08T11:53:10.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T11:53:10.29Z"
             },
             {
               "$type": "Document",
@@ -144,8 +142,7 @@
               "RelativeToolTip": "CudaRuntime_PR\\Sphere.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-08T11:50:57.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T11:50:57.721Z"
             },
             {
               "$type": "Document",
@@ -155,7 +152,7 @@
               "RelativeDocumentMoniker": "CudaRuntime_PR\\kernel.cu",
               "ToolTip": "C:\\Users\\ume65\\source\\repos\\CudaRuntime_PR\\CudaRuntime_PR\\kernel.cu",
               "RelativeToolTip": "CudaRuntime_PR\\kernel.cu",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAowEMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-10-08T11:50:57.172Z",
               "EditorCaption": ""
