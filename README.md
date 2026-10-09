@@ -1,3 +1,22 @@
+### 참고 문헌
+- [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html#positionablecamera/cameraviewinggeometry)
+
+### Project Documentation
+
+프로젝트의 자세한 설명 및 구현 과정은 아래 Notion 문서에서 확인할 수 있습니다.
+- [01. 이미지 출력](https://ivy-face-1df.notion.site/01-3e9f2a3a5fb580f9bc3ff6eae6546f1b?pvs=143)
+- [02. The Vec3 Class](https://ivy-face-1df.notion.site/02-The-Vec3-Class-3e9f2a3a5fb5800e9d4ef0578f092632?pvs=143)
+- [03. Rays: A Simple Camera and Background](https://ivy-face-1df.notion.site/03-Rays-a-Simple-Camera-and-Background-3eaf2a3a5fb58000a639fb49a6a5a451?pvs=143)
+- [04. Adding a Sphere](https://ivy-face-1df.notion.site/04-Adding-a-Sphere-3eaf2a3a5fb5805e931dd6886ecf57c3?pvs=143)
+- [05. 표면 법선과 다중 객체](https://ivy-face-1df.notion.site/05-3f1f2a3a5fb5805eaa6add78fc14be1f?pvs=143)
+- [06. 카메라 클래스](https://ivy-face-1df.notion.site/06-3f1f2a3a5fb58043814fccc389cc3ece?pvs=143)
+- [07. 안티앨리어싱](https://ivy-face-1df.notion.site/07-3f1f2a3a5fb580b58e34c87457143b5d?pvs=143)
+- [08. 확산 재질](https://ivy-face-1df.notion.site/08-3f2f2a3a5fb5808d8ed9cb39e5bf5bfc?pvs=143)
+- [09. 메탈](https://ivy-face-1df.notion.site/09-Metal-3f3f2a3a5fb580fe80cbc5f6e65137ad?pvs=143)
+- [10. 유전체](https://ivy-face-1df.notion.site/10-Dielectrics-3f3f2a3a5fb58008b721f6a0983d389c?pvs=143)
+- [11. 카메라 위치 조정](https://ivy-face-1df.notion.site/11-3f4f2a3a5fb580c48fbce527f2cd0847?pvs=143)
+- [12. 초점 흐림](https://ivy-face-1df.notion.site/12-Defocus-Blur-3f4f2a3a5fb5805ab588df572877fe18?pvs=143)
+
 ### CUDA 개발 환경 설정
 
 #### 1. CUDA Toolkit 설치
@@ -63,16 +82,3 @@ CUDA 프로젝트를 생성하면 기본적으로 `kernel.cu` 파일이 생성�
 * NVIDIA GPU 드라이버가 최신 상태인지 확인하는 것을 권장합니다.
 * GPU 아키텍처 설정은 사용 중인 GPU의 Compute Capability에 맞게 설정해야 합니다.
 
-### Project Documentation
-
-프로젝트의 자세한 설명 및 구현 과정은 아래 Notion 문서에서 확인할 수 있습니다.
-- [01. 이미지 출력](https://ivy-face-1df.notion.site/01-3e9f2a3a5fb580f9bc3ff6eae6546f1b?pvs=143)
-- [02. The Vec3 Class](https://ivy-face-1df.notion.site/02-The-Vec3-Class-3e9f2a3a5fb5800e9d4ef0578f092632?pvs=143)
-- [03. Rays: A Simple Camera and Background](https://ivy-face-1df.notion.site/03-Rays-a-Simple-Camera-and-Background-3eaf2a3a5fb58000a639fb49a6a5a451?pvs=143)
-- [04. Adding a Sphere](https://ivy-face-1df.notion.site/04-Adding-a-Sphere-3eaf2a3a5fb5805e931dd6886ecf57c3?pvs=143)
-- [05. 표면 법선과 다중 객체](https://ivy-face-1df.notion.site/05-3f1f2a3a5fb5805eaa6add78fc14be1f?pvs=143)
-- [06. 카메라 클래스](https://ivy-face-1df.notion.site/06-3f1f2a3a5fb58043814fccc389cc3ece?pvs=143)
-- [07. 안티앨리어싱](https://ivy-face-1df.notion.site/07-3f1f2a3a5fb580b58e34c87457143b5d?pvs=143)
-- [08. 확산 재질](https://ivy-face-1df.notion.site/08-3f2f2a3a5fb5808d8ed9cb39e5bf5bfc?pvs=143)
-- [09. 메탈](https://ivy-face-1df.notion.site/09-Metal-3f3f2a3a5fb580fe80cbc5f6e65137ad?pvs=143)
-- [10. 유전체](https://ivy-face-1df.notion.site/10-Dielectrics-3f3f2a3a5fb58008b721f6a0983d389c?pvs=143)

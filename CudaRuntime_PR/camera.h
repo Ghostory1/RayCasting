@@ -17,6 +17,9 @@ public:
 	Point3 lookat = Point3(0, 0, -1); // 카메라가 바라보는 점
 	Vec3 vup = Vec3(0, 1, 0); // 카메라가 상대 "위쪽" 방향
 
+	double defocus_angle = 0;
+	double focus_dist = 10;
+
 	void Render(const Hittable& world)
 	{
 		Initialize();
@@ -81,6 +84,10 @@ private:
 			- viewportV / 2.0;
 
 		mPixel00Location = viewportUpperLeft + 0.5 * (mPixelDeltaU + mPixelDeltaV);
+
+		const double defocusRadius = focus_dist * std::tan(DegreesToRadians(defocus_angle * 0.5));
+		mDefocusDiskU = u * defocusRadius;
+		mDefocusDiskV = v * defocusRadius;
 	}
 	Ray GetRay(int pixelIndex, int scanlineIndex) const
 	{
@@ -90,7 +97,7 @@ private:
 			+ ((pixelIndex + offset.X()) * mPixelDeltaU)
 			+ ((scanlineIndex + offset.Y()) * mPixelDeltaV);
 
-		auto rayOrigin = mCenter;
+		auto rayOrigin = (defocus_angle <= 0.0) ? mCenter : DefocusDiskSample();
 		auto rayDirection = pixelSample - rayOrigin;
 
 		return Ray(rayOrigin, rayDirection);
@@ -98,6 +105,11 @@ private:
 	Vec3 SampleSquare() const
 	{
 		return Vec3(RandomDouble() - 0.5, RandomDouble() - 0.5, 0.0);
+	}
+	Point3 DefocusDiskSample() const
+	{
+		const Vec3 point = RandomInUnitDisk();
+		return mCenter + (point.X() * mDefocusDiskU) + (point.Y() * mDefocusDiskV);
 	}
 	Color RayColor(const Ray& ray,int depth ,const Hittable& world) const
 	{
@@ -135,4 +147,7 @@ private:
 	Vec3 mPixelDeltaU; // 오른쪽 픽셀로의 오프셋
 	Vec3 mPixelDeltaV; // 아래 픽셀로의 오프셋
 	Vec3 u, v, w; // 카메라 프레임 기저 벡터
+
+	Vec3 mDefocusDiskU;
+	Vec3 mDefocusDiskV;
 };
