@@ -7,10 +7,15 @@
 class Camera
 {
 public:
-	double aspectRatio = 1.0;
-	int imageWidth = 100;
-	int samplesPerPixel = 10;
-	int maxDepth = 10;
+	double aspectRatio = 1.0; // 이미지 넓이 대 높이 비율
+	int imageWidth = 100; // 렌더링된 이미지 넓이 (픽셀 단위)
+	int samplesPerPixel = 10; // 각 픽셀당 랜덤 샘플 수
+	int maxDepth = 10; // 장면으로의 최대 광선 반사 횟수
+
+	double vfov = 90; //수직 시야각
+	Point3 lookfrom = Point3(0, 0, 0); // 카메라가 바라보는 위치
+	Point3 lookat = Point3(0, 0, -1); // 카메라가 바라보는 점
+	Vec3 vup = Vec3(0, 1, 0); // 카메라가 상대 "위쪽" 방향
 
 	void Render(const Hittable& world)
 	{
@@ -48,22 +53,30 @@ private:
 		mImageHeight = (mImageHeight < 1) ? 1 : mImageHeight;
 
 		mPixelSamplesScale = 1.0 / static_cast<double>(samplesPerPixel);
-		mCenter = Point3(0.0, 0.0, 0.0);
+
+		mCenter = lookfrom;
 
 		// 뷰포트
-		auto focalLength = 1.0;
-		auto viewportHeight = 2.0;
+		auto focalLength = (lookfrom - lookat).Length();
+		auto theta = DegreesToRadians(vfov);
+		auto h = std::tan(theta / 2);
+		auto viewportHeight = 2.0 * h * focalLength;
 		auto viewportWidth = viewportHeight * (static_cast<double>(imageWidth) / mImageHeight);
 
-		auto viewportU = Vec3(viewportWidth, 0.0, 0.0);
-		auto viewportV = Vec3(0.0, -viewportHeight, 0.0);
+		// 카메라 좌표 프레임에 대한 u,v,w 단위 기저 벡터 계산
+		w = UnitVector(lookfrom - lookat);
+		u = UnitVector(Cross(vup,w));
+		v = Cross(w, u);
+
+		auto viewportU = viewportWidth * u; // 뷰포트 수평 가장자리를 가로지르는 벡터
+		auto viewportV = viewportHeight * -v; // 뷰포트 수직 가장자리를 따라 내려가는 벡터
 
 		mPixelDeltaU = viewportU / imageWidth;
 		mPixelDeltaV = viewportV / mImageHeight;
 		
 		auto viewportUpperLeft =
 			mCenter
-			- Vec3(0.0, 0.0, focalLength)
+			- (focalLength * w)
 			- viewportU / 2.0
 			- viewportV / 2.0;
 
@@ -114,11 +127,12 @@ private:
 
 private:
 
-	int mImageHeight = 0;
-	double mPixelSamplesScale = 1.0;
+	int mImageHeight = 0; //렌더링된 이미지 높이
+	double mPixelSamplesScale = 1.0; // 픽셀 샘플 합계에 대한 색상 스케일 팩터
 
-	Point3 mCenter;
-	Point3 mPixel00Location;
-	Vec3 mPixelDeltaU;
-	Vec3 mPixelDeltaV;
+	Point3 mCenter; //카메라 중심
+	Point3 mPixel00Location; //픽셀 0,0의 위치
+	Vec3 mPixelDeltaU; // 오른쪽 픽셀로의 오프셋
+	Vec3 mPixelDeltaV; // 아래 픽셀로의 오프셋
+	Vec3 u, v, w; // 카메라 프레임 기저 벡터
 };
